@@ -1,25 +1,5 @@
-# novdom_ui
+# novdom_dev_tools
 
-[![Package Version](https://img.shields.io/hexpm/v/novdom_ui)](https://hex.pm/packages/novdom_ui)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/novdom_ui/)
+The dev tools for the [novdom](https://github.com/TobiasBinnewies/novdom) framework.
 
-```sh
-gleam add novdom_ui
-```
-```gleam
-import novdom_ui
-
-pub fn main() {
-  // TODO: An example of the project in use
-}
-```
-
-Further documentation can be found at <https://hexdocs.pm/novdom_ui>.
-
-## Development
-
-```sh
-gleam run   # Run the project
-gleam test  # Run the tests
-gleam shell # Run an Erlang shell
-```
+Use it for testing (`novdom_dev_tools/testing`) and ~~bundling / hot reloading~~ *(not working yet)*
