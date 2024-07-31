@@ -1,7 +1,0 @@
-{
-  "name": "novdom_dev_tools",
-  "type": "module",
-  "devDependencies": {
-    "jsdom": "^24.1.1"
-  }
-}

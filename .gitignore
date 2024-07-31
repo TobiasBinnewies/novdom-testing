@@ -3,3 +3,6 @@
 /build
 erl_crash.dump
 /node_modules
+bun.lockb
+package.json
+tsconfig.json
