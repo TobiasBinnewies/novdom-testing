@@ -1,0 +1,22 @@
+name = "novdom_dev_tools"
+version = "0.1.0"
+target = "javascript"
+
+# Fill out these fields if you intend to generate HTML documentation or publish
+# your project to the Hex package manager.
+#
+description = "UI-Library for Novdom"
+licences = ["MIT"]
+repository = { type = "github", user = "TobiasBinnewies", repo = "novdom_dev_tools" }
+# links = [{ title = "Website", href = "https://gleam.run" }]
+#
+# For a full reference of all the available options, you can have a look at
+# https://gleam.run/writing-gleam/gleam-toml/.
+
+internal_modules = ["novdom_dev_tools/internals", "novdom_dev_tools/internals/*"]
+
+[dependencies]
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
