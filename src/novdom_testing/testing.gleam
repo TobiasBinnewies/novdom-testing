@@ -22,7 +22,7 @@ pub fn callee_count(callee: Callee) -> Int {
 }
 
 /// Check if a component is visible to the user
-@external(javascript, "../document_ffi.mjs", "component_in_document")
+@external(javascript, "../testing_ffi.mjs", "component_in_document")
 pub fn component_visible(component: Component) -> Bool
 
 /// Trigger an event on a component.
@@ -32,14 +32,14 @@ pub fn component_visible(component: Component) -> Bool
 /// trigger_event(my_component, "click")
 /// ```
 ///
-@external(javascript, "../document_ffi.mjs", "trigger_event")
+@external(javascript, "../testing_ffi.mjs", "trigger_event")
 pub fn trigger_event(component: Component, event: String) -> Nil
 
-@external(javascript, "../document_ffi.mjs", "create_callee")
+@external(javascript, "../testing_ffi.mjs", "create_callee")
 fn create_callee_js() -> String
 
-@external(javascript, "../document_ffi.mjs", "call_callee")
+@external(javascript, "../testing_ffi.mjs", "call_callee")
 fn call_callee_js(id: String) -> Nil
 
-@external(javascript, "../document_ffi.mjs", "callee_count")
+@external(javascript, "../testing_ffi.mjs", "callee_count")
 fn callee_count_js(id: String) -> Int
