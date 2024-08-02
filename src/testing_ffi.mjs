@@ -1,9 +1,8 @@
 import jsdom from "jsdom"
 import fs from "fs"
-import { get } from "http"
 
 if (typeof window === "undefined") {
-  const html = fs.readFileSync("build/.novdom/index.html", "utf8")
+  const html = fs.readFileSync("build/packages/novdom_dev_tools/priv/template/index.html", "utf8")
   const dom = new jsdom.JSDOM(html)
   global.window = dom.window
   global.document = dom.window.document
