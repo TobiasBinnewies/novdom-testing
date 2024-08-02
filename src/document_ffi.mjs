@@ -18,21 +18,21 @@ function app_element() {
   return document.getElementById("_app_")
 }
 
-function get_element(comp_id) {
-  const elem = app_element().querySelector("#" + comp_id)
+function get_element(comp) {
+  const elem = app_element().querySelector("#" + comp.id)
   if (!elem) {
-    throw new Error("Component not found: " + comp_id)
+    throw new Error("Component not found: " + comp.id)
   }
   return elem
 }
 
-export function component_in_document(comp_id) {
-  const elem = get_element(comp_id)
+export function component_in_document(comp) {
+  const elem = get_element(comp)
   return !!elem && elem.hidden === false
 }
 
-export function trigger_event(comp_id, event_name) {
-  get_element(comp_id).dispatchEvent(new window.Event(event_name))
+export function trigger_event(comp, event_name) {
+  get_element(comp).dispatchEvent(new window.Event(event_name))
 }
 
 export function create_callee() {
